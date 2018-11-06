@@ -11,11 +11,18 @@ class Doctor
   end
 
   def appointment_count
+    # doctor_appointments =
+    #   Appointment.all.select do |appointment|
+    #       appointment.doctor == self
+    #   end
+    self.appointments.count
+  end
+
+  def appointments
     doctor_appointments =
       Appointment.all.select do |appointment|
           appointment.doctor == self
       end
-    doctor_appointments.count
   end
 
   def patients
