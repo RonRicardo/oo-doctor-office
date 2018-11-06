@@ -3,8 +3,9 @@ class Doctor
 
   @@all = []
 
-  def initialize(name, speciality="doctoring")
-    @name = name
+  def initialize(first_name, last_name, speciality="doctoring")
+    @first_name = first_name
+    @last_name = last_name
     @speciality = speciality
   end
 
