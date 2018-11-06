@@ -23,5 +23,9 @@ class Doctor
   def self.full_names
 
   end
+  
+  def create_appointment(patient)
+    
+  end
 
 end
