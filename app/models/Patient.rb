@@ -27,11 +27,11 @@ class Patient
   def self.find_by_name(patient_search)
     found_patient = self.all.find do |patient|
       patient.name == patient_search
-  end
-    if found_patient
-      return found_patient
-    else
-      "Cannot find patient by that name"
     end
+      if found_patient
+        return found_patient
+      else
+        "Cannot find patient by that name"
+      end
   end
 end
