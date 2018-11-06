@@ -1,5 +1,6 @@
 class Appointment
   attr_reader :doctor, :patient
+  
   @@all = []
 
   def initialize(doctor, patient, location="Flatiron")

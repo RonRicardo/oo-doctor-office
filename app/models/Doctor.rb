@@ -50,4 +50,8 @@ class Doctor
     end
   end
 
+  def create_appointment(patient)
+    Appointment.new(self, patient)
+  end
+
 end
